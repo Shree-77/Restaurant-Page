@@ -1,9 +1,24 @@
 import { loadHome } from "./pages/homePage";
+import { contact } from "./pages/Contact";
 
 const ContentDiv = document.getElementById('content');
+const home = document.getElementById('Home');
+const cont = document.getElementById('Contact');
 
-const Home = loadHome();
+home.addEventListener('click', init);
+cont.addEventListener = ('click', loadContact);
 
-ContentDiv.appendChild(Home);
+ContentDiv.appendChild(init());
 
+
+
+function init() {
+    ContentDiv.innerHTML = '';
+    return loadHome();
+}
+
+function loadContact() {
+    ContentDiv.innerHTML = '';
+    return contact();
+}
 

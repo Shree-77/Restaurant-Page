@@ -14,12 +14,15 @@ function createHead() {
     const homeButton = document.createElement('button');
     homeButton.textContent = 'Home';
     homeButton.classList.add('button');
+    homeButton.id = 'Home';
     const menuButton = document.createElement('button');
     menuButton.textContent = 'Menu';
     menuButton.classList.add('button');
+    menuButton.id = 'Menu';
     const contactButton = document.createElement('button');
     contactButton.textContent = 'Contact';
     contactButton.classList.add('button');
+    contactButton.id = 'Contact';
 
     buttons.appendChild(homeButton);
     buttons.appendChild(menuButton);
@@ -29,6 +32,8 @@ function createHead() {
     head.appendChild(buttons);
     return head;
 }
+
+
 function createBody() {
     const body = document.createElement('div');
     body.id = 'content';
@@ -67,4 +72,4 @@ function loadHome() {
     Webpage.appendChild(createFooter());
     return Webpage;
 }
-export { loadHome }
+export { loadHome, createHead }

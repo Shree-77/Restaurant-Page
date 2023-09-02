@@ -1,26 +1,42 @@
 @font-face {
     font-family: 'Myfont';
-    src: url(../Fonts/MyFont.otf)format('opentype');
+    src: url(../Fonts/MyFont.ttf)format('truetype');
 }
 
 #header {
     background-color: lightblue;
+    color: crimson;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .desc {
     font-size: 50px;
-    color: rgba(237, 78, 20, 0.927);
+    color: rgba(255, 0, 0, 0.927);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.ContactLines {
+    font-size: 50px;
+}
+
+li {
+    list-style: none;
 }
 
 .button {
     margin-right: 10px;
     display: flex;
     text-align: center;
+}
+
+button:hover {
+    background-color: rgb(252, 236, 9);
+    color: rgb(243, 9, 239);
 }
 
 button {
@@ -30,6 +46,9 @@ button {
     border-radius: 8px;
     background: lightblue;
     border: solid rgb(27, 148, 229);
+    font-size: large;
+    text-align: center;
+    font-weight: 600;
 }
 
 
@@ -42,12 +61,11 @@ button {
     text-align: center;
     height: 100%;
     font-family: 'MyFont';
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-
 }
 
 #footer {
     background-color: lightblue;
     padding: 20px;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
