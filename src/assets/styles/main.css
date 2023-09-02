@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Myfont';
+    src: url(../Fonts/MyFont.otf)format('opentype');
+}
+
+#header {
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    font-size: 50px;
+    color: rgba(237, 78, 20, 0.927);
+}
+
+.button {
+    margin-right: 10px;
+    display: flex;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background: lightblue;
+    border: solid rgb(27, 148, 229);
+}
+
+
+#content {
+    background-image: url(../Images/Restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    font-family: 'MyFont';
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+#footer {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
