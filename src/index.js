@@ -2,23 +2,18 @@ import { loadHome } from "./pages/homePage";
 import { contact } from "./pages/Contact";
 
 const ContentDiv = document.getElementById('content');
-const home = document.getElementById('Home');
-const cont = document.getElementById('Contact');
+ContentDiv.appendChild(loadHome());
 
-home.addEventListener('click', init);
-cont.addEventListener = ('click', loadContact);
+const btn = document.querySelectorAll('.button');
 
-ContentDiv.appendChild(init());
-
-
-
-function init() {
-    ContentDiv.innerHTML = '';
-    return loadHome();
-}
-
-function loadContact() {
-    ContentDiv.innerHTML = '';
-    return contact();
-}
-
+btn.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        if (e.target.id === 'Home') {
+            ContentDiv.innerHTML = '';
+            ContentDiv.appendChild(loadHome());
+        } else if (e.target.id === 'Contact') {
+            ContentDiv.innerHTML = '';
+            ContentDiv.appendChild(contact());
+        }
+    });
+});

@@ -11,21 +11,21 @@ function createHead() {
     const Title_name = document.createElement('h1');
     Title_name.textContent = 'CodeCafe';
     title.appendChild(Title_name);
+
+
     const homeButton = document.createElement('button');
     homeButton.textContent = 'Home';
     homeButton.classList.add('button');
-    homeButton.id = 'Home';
-    const menuButton = document.createElement('button');
-    menuButton.textContent = 'Menu';
-    menuButton.classList.add('button');
-    menuButton.id = 'Menu';
+    homeButton.setAttribute('id', 'Home');
+
+
     const contactButton = document.createElement('button');
     contactButton.textContent = 'Contact';
     contactButton.classList.add('button');
-    contactButton.id = 'Contact';
+    contactButton.setAttribute('id', 'Contact');
+
 
     buttons.appendChild(homeButton);
-    buttons.appendChild(menuButton);
     buttons.appendChild(contactButton);
 
     head.appendChild(title);
@@ -72,4 +72,4 @@ function loadHome() {
     Webpage.appendChild(createFooter());
     return Webpage;
 }
-export { loadHome, createHead }
+export { loadHome, createHead, createFooter }

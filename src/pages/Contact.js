@@ -1,5 +1,6 @@
 import _ from 'lodash';
-import { createHead } from './homePage';
+import { createHead, createFooter } from './homePage';
+
 
 function contact() {
     const Content = document.createElement('div');
@@ -22,6 +23,8 @@ function contact() {
 
     Content.appendChild(createHead());
     Content.appendChild(details);
+    Content.appendChild(createFooter());
+
 
     return Content;
 }
